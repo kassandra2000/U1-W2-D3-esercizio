@@ -350,7 +350,7 @@ for (i = 1; i < 2; i++) {
     );
     console.log("il mio anno di nascita è: ", starWarsCharacters[7].birth_year);
     console.log("il mio genere è: ", starWarsCharacters[7].gender);
-  } else if (random >= 0.6 && random < 0.7) {
+  } else if (random >= 0.6 && random < 0.8) {
     console.log("mi chiamo: ", starWarsCharacters[8].name);
     console.log("sono alto/a: ", starWarsCharacters[8].height, "cm");
     console.log("ho una massa di: ", starWarsCharacters[8].mass);
@@ -365,7 +365,7 @@ for (i = 1; i < 2; i++) {
     );
     console.log("il mio anno di nascita è: ", starWarsCharacters[8].birth_year);
     console.log("il mio genere è: ", starWarsCharacters[8].gender);
-  } else if (random >= 0.7 && random < 1) {
+  } else if (random >= 0.8 && random < 1) {
     console.log("mi chiamo: ", starWarsCharacters[9].name);
     console.log("sono alto/a: ", starWarsCharacters[9].height, "cm");
     console.log("ho una massa di: ", starWarsCharacters[9].mass);
@@ -383,4 +383,6 @@ for (i = 1; i < 2; i++) {
   } else {
     console.log(starWarsCharacters);
   }
+  console.log(random)
 }
+
