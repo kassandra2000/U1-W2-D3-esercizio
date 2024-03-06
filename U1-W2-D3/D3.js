@@ -218,173 +218,29 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
-console.log(femaleCharacters);
 
-console.log(charactersNames.length);
-charactersNames.splice(4, 1);
-charactersNames.splice(5, 1);
-console.log(charactersNames.length);
-
-console.log(charactersNames)
+console.log("extraaa");
+for (let i = 0; i < femaleCharacters.length; i++) {
+  for (let j = 0; j < charactersNames.length; j++)
+    if (femaleCharacters[i].name === charactersNames[j]) {
+      charactersNames.splice(j, 1);
+    }
+}
+console.log(charactersNames);
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
-console.log("extra");
-const random = Math.random();
-for (let i = 1; i < 2; i++) {
-  if (random < 0.05) {
-    console.log("mi chiamo: ", starWarsCharacters[0].name);
-    console.log("sono alto/a: ", starWarsCharacters[0].height, "cm");
-    console.log("ho una massa di: ", starWarsCharacters[0].mass);
-    console.log(
-      "i miei capelli sono di colore:  ",
-      starWarsCharacters[0].hair_color
-    );
-    console.log("la mia pelle è di colore: ", starWarsCharacters[0].skin_color);
-    console.log(
-      "i miei occhi sono di colore: ",
-      starWarsCharacters[0].eye_color
-    );
-    console.log("il mio anno di nascita è: ", starWarsCharacters[0].birth_year);
-    console.log("il mio genere è: ", starWarsCharacters[0].gender);
-  } else if (random >= 0.05 && random < 0.1) {
-    console.log("mi chiamo: ", starWarsCharacters[1].name);
-    console.log("sono alto/a: ", starWarsCharacters[1].height, "cm");
-    console.log("ho una massa di: ", starWarsCharacters[1].mass);
-    console.log(
-      "i miei capelli sono di colore:  ",
-      starWarsCharacters[1].hair_color
-    );
-    console.log("la mia pelle è di colore: ", starWarsCharacters[1].skin_color);
-    console.log(
-      "i miei occhi sono di colore: ",
-      starWarsCharacters[1].eye_color
-    );
-    console.log("il mio anno di nascita è: ", starWarsCharacters[1].birth_year);
-    console.log("il mio genere è: ", starWarsCharacters[1].gender);
-  } else if (random >= 0.1 && random < 0.15) {
-    console.log("mi chiamo: ", starWarsCharacters[3].name);
-    console.log("sono alto/a: ", starWarsCharacters[3].height, "cm");
-    console.log("ho una massa di: ", starWarsCharacters[3].mass);
-    console.log(
-      "i miei capelli sono di colore:  ",
-      starWarsCharacters[3].hair_color
-    );
-    console.log("la mia pelle è di colore: ", starWarsCharacters[3].skin_color);
-    console.log(
-      "i miei occhi sono di colore: ",
-      starWarsCharacters[3].eye_color
-    );
-    console.log("il mio anno di nascita è: ", starWarsCharacters[3].birth_year);
-    console.log("il mio genere è: ", starWarsCharacters[3].gender);
-  } else if (random >= 0.15 && random < 0.2) {
-    console.log("mi chiamo: ", starWarsCharacters[2].name);
-    console.log("sono alto/a: ", starWarsCharacters[2].height, "cm");
-    console.log("ho una massa di: ", starWarsCharacters[2].mass);
-    console.log(
-      "i miei capelli sono di colore:  ",
-      starWarsCharacters[2].hair_color
-    );
-    console.log("la mia pelle è di colore: ", starWarsCharacters[2].skin_color);
-    console.log(
-      "i miei occhi sono di colore: ",
-      starWarsCharacters[2].eye_color
-    );
-    console.log("il mio anno di nascita è: ", starWarsCharacters[2].birth_year);
-    console.log("il mio genere è: ", starWarsCharacters[2].gender);
-  } else if (random >= 0.2 && random < 0.3) {
-    console.log("mi chiamo: ", starWarsCharacters[4].name);
-    console.log("sono alto/a: ", starWarsCharacters[4].height, "cm");
-    console.log("ho una massa di: ", starWarsCharacters[4].mass);
-    console.log(
-      "i miei capelli sono di colore:  ",
-      starWarsCharacters[4].hair_color
-    );
-    console.log("la mia pelle è di colore: ", starWarsCharacters[4].skin_color);
-    console.log(
-      "i miei occhi sono di colore: ",
-      starWarsCharacters[4].eye_color
-    );
-    console.log("il mio anno di nascita è: ", starWarsCharacters[4].birth_year);
-    console.log("il mio genere è: ", starWarsCharacters[4].gender);
-  } else if (random >= 0.3 && random < 0.4) {
-    console.log("mi chiamo: ", starWarsCharacters[5].name);
-    console.log("sono alto/a: ", starWarsCharacters[5].height, "cm");
-    console.log("ho una massa di: ", starWarsCharacters[5].mass);
-    console.log(
-      "i miei capelli sono di colore:  ",
-      starWarsCharacters[5].hair_color
-    );
-    console.log("la mia pelle è di colore: ", starWarsCharacters[5].skin_color);
-    console.log(
-      "i miei occhi sono di colore: ",
-      starWarsCharacters[5].eye_color
-    );
-    console.log("il mio anno di nascita è: ", starWarsCharacters[5].birth_year);
-    console.log("il mio genere è: ", starWarsCharacters[5].gender);
-  } else if (random >= 0.4 && random < 0.5) {
-    console.log("mi chiamo: ", starWarsCharacters[6].name);
-    console.log("sono alto/a: ", starWarsCharacters[6].height, "cm");
-    console.log("ho una massa di: ", starWarsCharacters[6].mass);
-    console.log(
-      "i miei capelli sono di colore:  ",
-      starWarsCharacters[6].hair_color
-    );
-    console.log("la mia pelle è di colore: ", starWarsCharacters[6].skin_color);
-    console.log(
-      "i miei occhi sono di colore: ",
-      starWarsCharacters[6].eye_color
-    );
-    console.log("il mio anno di nascita è: ", starWarsCharacters[6].birth_year);
-    console.log("il mio genere è: ", starWarsCharacters[6].gender);
-  } else if (random >= 0.5 && random < 0.6) {
-    console.log("mi chiamo: ", starWarsCharacters[7].name);
-    console.log("sono alto/a: ", starWarsCharacters[7].height, "cm");
-    console.log("ho una massa di: ", starWarsCharacters[7].mass);
-    console.log(
-      "i miei capelli sono di colore:  ",
-      starWarsCharacters[7].hair_color
-    );
-    console.log("la mia pelle è di colore: ", starWarsCharacters[7].skin_color);
-    console.log(
-      "i miei occhi sono di colore: ",
-      starWarsCharacters[7].eye_color
-    );
-    console.log("il mio anno di nascita è: ", starWarsCharacters[7].birth_year);
-    console.log("il mio genere è: ", starWarsCharacters[7].gender);
-  } else if (random >= 0.6 && random < 0.8) {
-    console.log("mi chiamo: ", starWarsCharacters[8].name);
-    console.log("sono alto/a: ", starWarsCharacters[8].height, "cm");
-    console.log("ho una massa di: ", starWarsCharacters[8].mass);
-    console.log(
-      "i miei capelli sono di colore:  ",
-      starWarsCharacters[8].hair_color
-    );
-    console.log("la mia pelle è di colore: ", starWarsCharacters[8].skin_color);
-    console.log(
-      "i miei occhi sono di colore: ",
-      starWarsCharacters[8].eye_color
-    );
-    console.log("il mio anno di nascita è: ", starWarsCharacters[8].birth_year);
-    console.log("il mio genere è: ", starWarsCharacters[8].gender);
-  } else if (random >= 0.8 && random < 1) {
-    console.log("mi chiamo: ", starWarsCharacters[9].name);
-    console.log("sono alto/a: ", starWarsCharacters[9].height, "cm");
-    console.log("ho una massa di: ", starWarsCharacters[9].mass);
-    console.log(
-      "i miei capelli sono di colore:  ",
-      starWarsCharacters[9].hair_color
-    );
-    console.log("la mia pelle è di colore: ", starWarsCharacters[9].skin_color);
-    console.log(
-      "i miei occhi sono di colore: ",
-      starWarsCharacters[9].eye_color
-    );
-    console.log("il mio anno di nascita è: ", starWarsCharacters[9].birth_year);
-    console.log("il mio genere è: ", starWarsCharacters[9].gender);
-  } else {
-    console.log(starWarsCharacters);
-  }
-  console.log(random)
-}
 
+
+const randomNumber = Math.floor(Math.random() * starWarsCharacters.length);
+
+console.log(
+  "ciao mi chiamo: ",starWarsCharacters[randomNumber].name, 
+  ", sono alto ", starWarsCharacters[randomNumber].height,"cm",
+  ", ho una massa di ", starWarsCharacters[randomNumber].mass, "kg",
+  ", i miei capelli sono di colore ", starWarsCharacters[randomNumber].hair_color,
+  ", la mia pelle è di colore ", starWarsCharacters[randomNumber].skin_color,
+  ", i miei occhi sono di colore ", starWarsCharacters[randomNumber].eye_color,
+  ", il mio anno di nascita è ", starWarsCharacters[randomNumber].birth_year,
+  ", il mio genere è ", starWarsCharacters[randomNumber].gender
+  );
